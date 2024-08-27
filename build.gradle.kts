@@ -16,10 +16,8 @@ dependencies {
     annotationProcessor("io.micronaut.serde:micronaut-serde-processor")
     implementation("io.micronaut:micronaut-http-client")
     implementation("io.micronaut.serde:micronaut-serde-jackson")
-    implementation("org.apache.logging.log4j:log4j-api")
-    implementation(platform("org.apache.logging.log4j:log4j-bom:2.23.1"))
-    runtimeOnly("org.apache.logging.log4j:log4j-core")
-    runtimeOnly("org.apache.logging.log4j:log4j-slf4j-impl")
+    implementation("ch.qos.logback:logback-classic")
+    implementation("org.apache.commons:commons-collections4:4.4")
     runtimeOnly("org.slf4j:jul-to-slf4j:2.0.13")
 }
 
